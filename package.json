@@ -1,13 +1,12 @@
 {
-  "name": "pg-query-parser",
-  "version": "0.2.1",
-  "description": "The real PostgreSQL query parser",
+  "name": "@floatingisland/fork-pg-query-parser",
+  "version": "0.1.0",
+  "description": "a hacky fork of pg-query-parser",
   "homepage": "http://github.com/zhm/pg-query-parser",
   "main": "dist/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter dot test/setup.js test/test.js",
     "simpletest": "node_modules/.bin/mocha ./test/setup.js ./test/test.js ./test/elements/*.js",
-    "prepublish": "npm run lint && npm run clean && npm run build",
     "lint": "node_modules/.bin/eslint src/* src/**/*",
     "build": "node_modules/.bin/babel src --out-dir dist --source-maps",
     "watch": "node_modules/.bin/babel src --out-dir dist --source-maps --watch",
@@ -15,15 +14,13 @@
     "check-deps": "node_modules/.bin/ncu",
     "update-deps": "node_modules/.bin/ncu -u"
   },
-  "author": "Zac McCormick <zac.mccormick@gmail.com> (http://github.com/zhm)",
+  "author": "Josh Vanderwillik <josh@willik.ca> (http://github.com/joshwillik)",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "git://github.com/zhm/pg-query-parser.git"
+    "url": "git://github.com/joshwillik/pg-query-parser.git"
   },
-  "eslintConfig": {
-    "extends": "fulcrum"
-  },
+  "eslintConfig": {},
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.1",
